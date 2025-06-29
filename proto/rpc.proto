@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package solana.rpc.v1;
+
+service Solana {
+  rpc GetAccountInfo (GetAccountInfoRequest) returns (GetAccountInfoResponse);
+}
+
+message Address {
+  string address = 1;
+}
+
+message GetAccountInfoRequest {
+  AccountInfo account = 1;
+}
+
+message AccountInfo {
+  string address = 1;
+  string commitment = 2;
+  bytes encoding = 3; 
+}
+
+message GetAccountInfoResponse {
+  bytes data = 1;
+  AccountMeta account = 2;
+}
+
+message AccountMeta {
+  string pubkey = 1;
+  bool isSigner = 2;
+  bool isWritable = 3;
+}
