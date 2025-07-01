@@ -103,4 +103,4 @@ Click the **“Create Coin”** button, enter the required details, and confirm 
 * All gRPC bonding curve updates use a custom integration (repo link coming soon).
 * Ensure your system supports **Node.js 18+** for WebSocket and gRPC compatibility.
 * Use modern browsers for best performance.
-
+* user can also shiftyrpc and also user websocket with pumpfun
