@@ -104,3 +104,7 @@ Click the **“Create Coin”** button, enter the required details, and confirm 
 * Ensure your system supports **Node.js 18+** for WebSocket and gRPC compatibility.
 * Use modern browsers for best performance.
 * user can also shiftyrpc and also user websocket with pumpfun
+
+## TradingView chart library 
+* we use GMGN ai api for rendering the real time chart in the website for each token
+* and updated the price and liquidty with mvex api 
